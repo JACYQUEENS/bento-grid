@@ -109,10 +109,13 @@ grid-area: item7;
   margin: 0;
 }
 /*tablets*/
-@media screen and (max-widht:1024px) and (min-width:770px){
+@media screen and (max-width:1024px) and (min-width:770px){
   .container{
-    grid-template-columns: 2fr;
+    display: grid;
+    grid-template-columns: 2, 1fr;
     grid-template-rows: repeat(8, auto);
+    background-color:blue;
+    width: 100%;
     grid-template-areas:
     "item1"
     "item2"
@@ -125,7 +128,7 @@ grid-area: item7;
   }
   
 }
-@media screen and (max-widht:769px) and (min-width:481px){
+@media screen and (max-width:769px) and (min-width:481px){
   .container{
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8, auto);
